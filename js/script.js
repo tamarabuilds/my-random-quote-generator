@@ -13,6 +13,9 @@ project 1 - A Random Quote Generator
 const quotes = [
   {
     // object 1
+    quote: 'this is my quote one',
+    autor: 'tamara',
+    note: 'donno'
   },
   {
     // object 2
