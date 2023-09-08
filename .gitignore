@@ -1,0 +1,4 @@
+ignore_me.html
+.vscode
+.DC_Store
+node_modules/
