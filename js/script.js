@@ -29,7 +29,7 @@ const quotes = [
 ***/
 
 function getRandomQuote(){
-  
+
   return
 }
 
@@ -37,6 +37,10 @@ function getRandomQuote(){
  * `printQuote` function
 ***/
 
+function printQuote(){
+
+  return
+}
 
 
 /***
