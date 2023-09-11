@@ -76,7 +76,7 @@ function getRandomQuote(){
  *  No params or return.
 ***/
 function getRandomColor(){
-  const randomValue = () => Math.floor( Math.random() * 256)                        // Is it OK practice to call an annonymous function in your function?
+  const randomValue = () => Math.floor( Math.random() * 256)                        // Is it OK practice to call an anonymous function in your function?
   const randomRGB = `rgb(${randomValue()}, ${randomValue()}, ${randomValue()})`
 
   return randomRGB
