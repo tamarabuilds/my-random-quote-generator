@@ -7,6 +7,12 @@ project 1 - A Random Quote Generator
   // Check the "Project Resources" section of the project instructions
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
+
+/*** 
+ *  @type {number} - sets number of seconds for auto-refresh of quotes              // Is it best practice to put fixed values at top and in caps?
+***/
+const REFRESHSECONDS = 10000
+
 /*** 
  *  @type {array} - stores quotes and their properties
 ***/
@@ -67,7 +73,7 @@ function getRandomQuote(){
 /***
  *  Updates the background to a random background color
  * 
- *  No params or returns
+ *  No params or return.
 ***/
 function getRandomColor(){
   const randomValue = () => Math.floor( Math.random() * 256)                        // Is it OK practice to call an annonymous function in your function?
@@ -77,25 +83,27 @@ function getRandomColor(){
 }
 
 
+
+
 /***
  *  Calls getRandomQuote(), builds HTML string display the quote and its properties,
  *  and finally displays the random quote in the browser.
  * 
- *  No properties or return.
+ *  No params or return.
 ***/
 
 function printQuote(){
   const randomQuote = getRandomQuote()
   const color = getRandomColor()
-
+  
   let html = `
-    <p class="quote">${randomQuote['quote']}</p>
-    <p class="source">${randomQuote['source']}`
-
+  <p class="quote">${randomQuote['quote']}</p>
+  <p class="source">${randomQuote['source']}`
+  
   if ( randomQuote['citation'] ){
     html += `<span class="citation"> ${randomQuote['citation']} </span>`
   }
-
+  
   if ( randomQuote['year'] ){
     html += `<span class="year"> ${randomQuote['year']} </span>`
   }
@@ -103,17 +111,26 @@ function printQuote(){
   if ( randomQuote['tag']) {
     html += `<span class="citation"> ${randomQuote['tag']} </span>`
   }
-
+  
   html += `</p>`
-
+  
   document.getElementById('quote-box').innerHTML = html
-
+  
   // Adding the random background color, picked up from https://stackdiary.com/tutorials/how-to-change-background-color-with-javascript/
   document.body.style.backgroundColor = color
-
+  
   return
 }
 
+
+
+/***
+ *  Auto-refreshes quotes on the page every 10 seconds.
+ * 
+ *  Credit to https://www.encodedna.com/javascript/auto-refresh-page-every-10-second-using-javascript-setInterval-method.htm
+***/
+  
+window.setInterval(printQuote, REFRESHSECONDS)
 
 /***
  * click event listener for the print quote button
