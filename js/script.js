@@ -9,7 +9,7 @@ project 1 - A Random Quote Generator
 
 
 /*** 
- *  @type {number} - sets number of seconds for auto-refresh of quotes              // Is it best practice to put fixed values at top and in caps?
+ *  @type {number} - sets number of seconds for auto-refresh of quotes
 ***/
 const REFRESHSECONDS = 10000
 
