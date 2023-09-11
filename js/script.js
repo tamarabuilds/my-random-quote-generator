@@ -22,39 +22,39 @@ const quotes = [
     source: "Johnny Carson",
     citation: "The Tonight Show Starring Johnny Carson",
     year: 1991,
-    tag: "humor"
+    tags: "humor"
   },
   {
     quote: "My mother always used to say: The older you get, the better you get, unless you're a banana.",
     source: "Rose (Betty White)",
     citation: "The Golden Girls",
     year: 1987,
-    tag: "humor"
+    tags: "humor"
   },
   {
     quote: "I changed all my passwords to 'Incorrect.' So whenever I forget, it will tell me 'Your password is incorrect.'",
     source: "Michael Scott",
     citation: "The Office",
-    tag: "humor"
+    tags: "humor"
   },
   {
     quote: "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.",
     source: "Will Ferrell",
-    tag: "humor"
+    tags: "humor"
   },
   {
     quote: "There's nothing simpler than avoiding people you don't like. Avoiding one's friends, that's the real test.",
     source: "Dowager Countess Violet Crawley (Maggie Smith)",
     citation: "Downton Abbey",
     year: 2014,
-    tag: "humor"
+    tags: "humor"
   },
   {
     quote: "Does it disturb anyone else that 'The Los Angeles Angels' baseball team translates directly to 'The The Angels Angels'?",
     source: "Neil DeGrasse Tyson",
     citation: "X (Twitter)",
     year: 2012,
-    tag: "humor"
+    tags: "humor"
   }
 ]
 
@@ -108,8 +108,8 @@ function printQuote(){
     html += `<span class="year"> ${randomQuote['year']} </span>`
   }
   
-  if ( randomQuote['tag']) {
-    html += `<span class="citation"> ${randomQuote['tag']} </span>`
+  if ( randomQuote['tags']) {
+    html += `<span class="citation"> ${randomQuote['tags']} </span>`
   }
   
   html += `</p>`
