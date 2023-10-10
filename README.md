@@ -6,8 +6,6 @@ Unit 01 project for the Full Stack JavaScript Techdegree from Treehouse. I pract
 
 Live site: https://tamarabuilds.github.io/my-random-quote-generator/
 
-[Live site](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
-
 
 ## How It's Made
 
