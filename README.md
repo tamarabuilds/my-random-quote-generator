@@ -4,6 +4,9 @@ Learn more about the developer on <a href="https://www.linkedin.com/in/tamarabui
 
 Unit 01 project for the Full Stack JavaScript Techdegree from Treehouse. I practied basic JavaScript syntax and data structures by building a Random Quote Generator, displaying a random quote when a user clicks a button or the page auto-refreshes.
 
+<img width="1192" alt="image" src="https://github.com/tamarabuilds/my-random-quote-generator/assets/98510821/945bd59d-40ff-406a-ae19-724580357a1a">
+
+
 Live site: https://tamarabuilds.github.io/my-random-quote-generator/
 
 
